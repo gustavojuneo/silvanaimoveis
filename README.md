@@ -16,7 +16,7 @@ O site está hospedado a mais de um ano e você consegue acessá-lo atráves do 
 <img src="https://imgur.com/JjZqTgP.png" alt="Imóveis">
 
 ### Imóvel
-<img src="https://imgur.com/N0eIPf6.png" alt="Imóveis">
+<img src="https://imgur.com/dhsdKXx.png" alt="Imóvel">
 
 ## Institucional
 <img src="https://imgur.com/46UxJoV.png" alt="Institucional">
