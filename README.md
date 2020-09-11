@@ -24,9 +24,6 @@ O site está hospedado a mais de um ano e você consegue acessá-lo atráves do 
 ## Simuladores
 <img src="https://imgur.com/C3y9Lnp.png" alt="Simuladores">
 
-## Portfólio
-<img src="https://imgur.com/ec2FFak.png" alt="Página Portfólio">
-
 ## Contato
 <img src="https://imgur.com/zbZ8sLh.png" alt="Página contato">
 
