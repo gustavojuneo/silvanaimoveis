@@ -1,0 +1,92 @@
+main
+	width: 100%
+	float: left
+	min-height: 400px
+	padding: 2% 0
+
+	.contato
+		h1
+			+font-size(25px)
+			text-align: center
+			text-transform: uppercase
+			color: #b2b2b2
+			margin-bottom: 5%
+			margin-top: 10px
+
+		span.wpcf7-not-valid-tip
+			margin-top: 5px
+
+		.section-contato,.section-local
+			float: left
+			width: 45%
+
+			+breakpoint($min-device)
+				width: 100%
+
+		.section-contato
+			padding: 0 5%
+			margin-right: 5%
+
+			p.alert
+				text-align: center
+				line-height: 1.5em
+				color: #ff0000
+				float: left
+				clear: both
+
+
+			form
+
+
+				+clearfix
+				+make-sm-column(12)
+
+				.cols
+					+make-row
+				.col
+					+make-sm-column(6)
+					padding-left: 2px
+					padding-right: 2px
+
+				input,select,textarea
+					width: 100%
+					border: 2px solid #e8e8e8
+					+border-radius(2px)
+					padding: 7px
+					text-transform: uppercase
+					outline: none
+					+transition(.5s)
+					background-color: $branco
+
+			.botao
+				width: auto
+				margin: 0 auto
+				padding: 10px 20px
+				display: table
+				background-color: $cinza-claro
+				border: 1px solid $cinza
+				+font-size(22px)
+
+				&:hover
+					background-color: rgba($purpura, .6)
+					color: $branco
+					border-color: $purpura
+
+		.section-local
+			padding-top: 2%
+			+breakpoint($min-device)
+				margin-top: 20px
+			article
+				margin-bottom: 5%
+
+				+breakpoint($min-device)
+					span
+						+font-size(16px)
+
+				i
+					width: 20px
+					height: 20px
+					margin-right: 5px
+
+				.local
+					margin-left: 25px

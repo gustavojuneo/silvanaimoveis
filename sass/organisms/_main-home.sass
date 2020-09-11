@@ -1,0 +1,157 @@
+main
+	width: 100%
+	float: left
+	background-color: $cinza-claro
+	padding: 3% 0
+	min-height: 400px
+
+	form
+		.form-group
+			width: 80%
+			margin: auto
+			clear: both
+
+			+breakpoint($max-device)
+				width: 100%
+
+			.form-control
+				width: 65%
+				float: left
+				border-left: none !important
+				border-right: none !important
+				border-radius: 0
+				height: 40px
+
+				+breakpoint($max-device)
+					width: 75%
+					border-radius: 0 10px 10px 0
+			.postform
+				width: 25%
+				float: left
+				border-right: none !important
+				border-radius: 10px 0 0 10px
+				padding-left: 1%
+				height: 40px
+
+			.form-control,.postform,button
+				height: 60px
+				border: 1px solid $cinza
+				background-color: $branco
+				box-shadow: none
+
+			button
+				width: 10%
+				border-left: none !important
+				border-radius: 0 10px 10px 0
+				+breakpoint($max-device)
+					width: 20%
+					float: right
+					clear: both
+					border-radius: 10px
+
+		.form-group-cod
+			width: 40%
+			margin: 0 auto 10px
+
+			+breakpoint($min-device)
+				width: 90%
+				float: left
+				clear: both
+				margin-left: 100px
+
+			+breakpoint($max-device)
+				width: 90%
+				margin-left: 100px
+
+			.form-control,.postform,button
+				height: 40px
+				border: 1px solid $cinza
+				background-color: $cinza-claro
+				box-shadow: none
+				float: left
+				margin-bottom: 10px
+
+			label
+				float: left
+				line-height: 40px
+				margin-right: 10px
+
+				+breakpoint($min-device)
+					display: none
+
+			.form-control
+				width: 30%
+
+
+
+	.novo-imovel
+		width: 100%
+		padding: 3% 0
+
+		h1
+			text-align: center
+			margin-bottom: 50px
+			text-transform: uppercase
+			+font-size(26px)
+			border-bottom: 1px solid $cinza
+			padding-bottom: 5px
+
+		.posts
+			width: 100%
+			background-color: $cinza-claro
+			+flexbox
+			+align-items(center)
+			+justify-content(space-around)
+			display: flex
+			flex-wrap: wrap
+			overflow: hidden
+			
+
+			.post
+				width: 450px
+				margin-bottom: 3%
+
+				+breakpoint($min-device)
+					width: 100%
+				.image
+					width: 450px
+					height: 350px
+					background-color: $cinza-escuro
+					margin-bottom: 10px
+					overflow: hidden
+
+					img
+						width: 100%
+						height: 100%
+
+				.info
+					width: 100%
+					padding: 0 3%
+					.cifrao,.valor
+						color: $purpura
+						margin-bottom: 10px
+						display: inline-block
+						+font-size(18px)
+
+					.valor
+						margin-left: 5px
+					h2
+						margin-bottom: 10px
+						+font-size(18px)
+						font-weight: $bold
+
+						a
+							color: $cinza-escuro
+
+							&:hover
+								color: $purpura
+
+					h3
+						color: #b2b2b2
+						margin-bottom: 10px
+					h4
+						display: inline
+						margin-left: 10px
+
+						&:nth-last-child(2)
+							margin-left: 0

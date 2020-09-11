@@ -1,0 +1,75 @@
+/* ======== Cores */
+$preto: black
+$branco: white
+$cinza-claro: #f6f6f6
+$cinza: #e8e8e8
+$cinza-escuro: #333333
+$purpura: #AB3490
+$vinho: #5E134D
+$purpura-escuro: #772953
+
+/* ======== Font */
+$light: 300
+$regular: 400
+$bold: 700
+$quattrocento: 'Quattrocento', serif
+
+$min-device: max-width 576px
+$max-device: max-width 992px
+$small-device: min-width 576px
+$medium-device: min-width 768px
+$large-device: min-width 992px
+$wide-screen: min-width 1200px
+
+=flexbox
+  display: -webkit-box
+  display: -webkit-flex
+  display: -moz-flex
+  display: -ms-flexbox
+  display: flex
+
+=gradient($angle,$gradient1, $gradient2)
+  background-color: $gradient2
+  background-image: -webkit-gradient(linear, $angle, from($gradient1), to($gradient2))
+  background-image: -webkit-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:    -moz-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:     -ms-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:      -o-linear-gradient($angle, $gradient1, $gradient2)
+  background-image:         linear-gradient($angle, $gradient1, $gradient2)
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=$angle,StartColorStr='#{$gradient1}', EndColorStr='#{$gradient2}')
+
+/* ======== Outros */
+=transition($transition...)
+  -moz-transition:    all $transition linear
+  -o-transition:      all $transition linear
+  -webkit-transition: all $transition linear
+  transition:         all $transition linear
+
+=border-radius($radius)
+  -webkit-border-radius: $radius
+  -moz-border-radius: $radius
+  -ms-border-radius: $radius
+  border-radius: $radius
+
+@function calculateRem($size)
+  $remSize: $size / 16px
+  @return $remSize * 1rem
+
+=font-size($size)
+  font-size: $size
+  font-size: calculateRem($size)
+
+=opacity($opacity)
+  opacity: $opacity
+  $opacity-ie: $opacity * 100
+  filter: alpha(opacity=$opacity-ie)
+
+/* ======== Background Color Opacity */
+=background-opacity($color: #000, $opacity: 0.85)
+  background: $color
+  background: rgba($color, $opacity)
+
+/* ======== Columns */
+=columns($count: 3, $gap: 10)
+  @include css3-prefix('column-count', $count)
+  @include css3-prefix('column-gap', $gap)

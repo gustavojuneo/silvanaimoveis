@@ -1,0 +1,85 @@
+footer
+	width: 100%
+	float: left
+	padding: 3% 0 0 0 !important
+	background-color: rgba($purpura-escuro, .9)
+
+
+	.imoveis,.instituto
+		margin-left: 5%
+		float: left
+		h1
+			color: $branco
+			+font-size(26px)
+			margin-bottom: 30px
+			font-weight: $bold
+
+		nav
+			ul
+				li
+					padding-bottom: 1.2em
+					a
+						color: $branco
+
+						&:hover
+							color: $branco
+
+	.contato
+		float: left
+		margin-left: 5%
+
+		+breakpoint($min-device)
+			margin-top: 20px
+
+		.social
+			margin-bottom: 10%
+			margin-left: 30%
+			a
+				color: $branco
+				+font-size(30px)
+				width: 50px
+				height: 50px
+				display: inline-block
+				line-height: 1.6em
+				border: 1px solid $branco
+				+border-radius(50px)
+				text-align: center
+
+				&:hover
+					color: $branco
+
+		article
+			margin-bottom: 1em
+			i
+				width: 20px
+				height: 20px
+				color: $branco
+
+			span
+				text-align: left
+				color: $branco
+
+
+	.direito
+		clear: both
+		float: right
+		margin-right: 3%
+		padding-bottom: 2%
+
+		+breakpoint($min-device)
+			margin-top: 40px
+
+		.copyright
+			color: $branco
+			clear: both
+			margin-top: 8%
+
+			+breakpoint($min-device)
+				+font-size(14px)
+
+			strong
+				a
+					color: rgba($branco, .6)
+
+					&:hover
+						color: $branco
